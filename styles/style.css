@@ -73,3 +73,7 @@ p {
     position: relative;
     left: 360px;
 }
+
+#buttons {
+    margin: 20px -200px;
+}
