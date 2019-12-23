@@ -42,3 +42,12 @@ h1{
     color: lightgrey;
     background-color: black;
 }
+
+#third-container {
+    margin: 80px 400px;
+    padding: 10px 220px;
+    border: orange 1px solid;
+    border-radius: 1px;
+    box-shadow: orange 1px 1px 10px;
+    background-color: white;
+}
