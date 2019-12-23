@@ -113,3 +113,10 @@ p {
     background-color:orange;
 }
 
+i, #year-author{
+    display: inline-block;
+    position: relative;
+    left: 500px;
+    color: white;
+    font-size: 15px;
+}
