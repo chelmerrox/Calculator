@@ -94,3 +94,7 @@ p {
     box-shadow: lightgrey 1px 1px 10px;
     outline: none;
 }
+
+.calc-buttons:hover {
+    box-shadow: darkgrey 1px 1px 10px;
+}
