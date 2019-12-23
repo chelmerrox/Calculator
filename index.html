@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/style.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <header><h1>Calculator</h1></header>
+    </head>
+
+    <body>
+        <!--Second container-->
+        <div id="second-container">
+            <button id="dark-light-mode">Dark mode</button>
+        </div>
+
+        <!--Third container-->
+        <div id="third-container">
+            <div id="display-screen">
+                <p>0<span></span></p>
+            </div>
+            <div id="buttons">
+                <div class="row-1">
+                    <button type="submit" class="calc-buttons" id="clear">C</button>
+                    <button type="submit" class="calc-buttons" id="parentheses">()</button>
+                    <button type="submit" class="calc-buttons" id="backspace">
+                        <img src="images/backspace_white.PNG" alt="Backspace button" width="90" height="60"/>
+                    </button>
+                    <button type="submit" class="calc-buttons" id="divide">
+                        <img src="images/divide_white.PNG" alt="Division button" width="90" height="60"/>
+                    </button>
+                </div>
+                <div class="row-2">
+                    <button type="submit" class="calc-buttons" id="seven">7</button>
+                    <button type="submit" class="calc-buttons" id="eight">8</button>
+                    <button type="submit" class="calc-buttons" id="nine">9</button>
+                    <button type="submit" class="calc-buttons" id="multiply">X</button>
+                </div>
+                <div class="row-3">
+                    <button type="submit" class="calc-buttons" id="four">4</button>
+                    <button type="submit" class="calc-buttons" id="five">5</button>
+                    <button type="submit" class="calc-buttons" id="six">6</button>
+                    <button type="submit" class="calc-buttons" id="subtract">-</button>
+                </div>
+                <div class="row-4">
+                    <button type="submit" class="calc-buttons" id="one">1</button>
+                    <button type="submit" class="calc-buttons" id="two">2</button>
+                    <button type="submit" class="calc-buttons" id="three">3</button>
+                    <button type="submit" class="calc-buttons" id="add">+</button>
+                </div>
+                <div class="row-5">
+                    <button type="submit" class="calc-buttons" id="negate-sign">+/-</button>
+                    <button type="submit" class="calc-buttons" id="zero" value="0">0</button>
+                    <button type="submit" class="calc-buttons" id="decimal-point">.</button>
+                    <button type="submit" class="calc-buttons" id="equal-to">=</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Fourth container-->
+        <div id="fourth-container">
+            <footer>
+                <i class="material-icons">&#xe90c;</i>
+                <p id="year-author">2019 chelmerrox</p>
+             </footer>
+        </div>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
