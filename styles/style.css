@@ -83,3 +83,14 @@ p {
     flex-direction: row;
     flex: 1;
 }
+
+.calc-buttons {
+    width: 100px;
+    height: 70px;
+    color: grey;
+    font-size: 20px;
+    border: lightgrey 1px solid;
+    background-color: white;
+    box-shadow: lightgrey 1px 1px 10px;
+    outline: none;
+}
