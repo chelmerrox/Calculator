@@ -98,3 +98,8 @@ p {
 .calc-buttons:hover {
     box-shadow: darkgrey 1px 1px 10px;
 }
+
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+    background-color: rgb(238, 235, 235);
+    border-color: rgb(187, 186, 186);
+}
