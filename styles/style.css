@@ -18,3 +18,22 @@ h1{
     text-shadow: orange 1px 1px 8px;
     font-size: 50px;
 }
+
+#second-container{
+    margin: 10px;
+    padding: 10px;
+}
+
+#dark-light-mode {
+    margin: 10px;
+    padding: 10px;
+    border: orange 2px solid;
+    border-radius: 15px;
+    box-shadow: orange 1px 1px 10px;
+    background-color: white;
+    color: grey;
+    position: relative;
+    left: 750px;
+    outline: none;
+    font-size: 15px;
+}
