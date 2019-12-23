@@ -37,3 +37,8 @@ h1{
     outline: none;
     font-size: 15px;
 }
+
+#dark-light-mode:hover {
+    color: lightgrey;
+    background-color: black;
+}
