@@ -77,3 +77,9 @@ p {
 #buttons {
     margin: 20px -200px;
 }
+
+.row-1, .row-2, .row-3, .row-4, .row-5 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
