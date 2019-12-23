@@ -64,3 +64,12 @@ h1{
     position: relative;
     left: -210px;
 }
+
+p {
+    font-family: arial, sans-serif;
+    font-size: 40px;
+    color: grey;
+    line-height: 10px;
+    position: relative;
+    left: 360px;
+}
