@@ -330,3 +330,9 @@ function useDivisionOperator(e){
         displayOperation();
     }
 }
+
+function matchNumbersToStringExpression(){
+    let y = [/^[0-9]+$/g];
+
+    return ((numbers[0].match(y))? true : false);
+}
