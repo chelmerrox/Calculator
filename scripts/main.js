@@ -400,3 +400,32 @@ function useZero(e){
         displayOperation();
     }
 }
+
+function useOne(e){
+    if (e.target === one || e.keyCode === 49 || e.keyCode === 97){  
+        value = "1";
+
+      /*if (matchNumbersToStringExpression() === true && operators === []){
+            result += value;
+            displayOperation();
+        } else if (returnLastIndexOfFirstString() === "." && operators === []){
+            result += value;
+            displayOperation();
+        } else if (matchNumbersToStringExpression() === true && operators !== []){
+            result += value;
+            displayOperation();
+        } else if (returnLastIndexOfSecondString() === true && operators !== []){
+            result += value;
+        } else {
+            numbers.push(value);
+
+            result = value;
+
+            displayOperation();
+        } */
+
+        numbers.push(value);
+        result += value;
+        displayOperation();
+    }
+}
