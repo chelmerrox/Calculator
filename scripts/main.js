@@ -709,3 +709,5 @@ operator = clearEntry.addEventListener('click', useClearEntryButton);
 
 operator = backspace.addEventListener('click', useBackSpaceOperator);
 operator = backspace.addEventListener('keypress', useBackSpaceOperator);  
+
+darkLightMode.addEventListener('click', changeCalculatorColor);
