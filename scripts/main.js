@@ -74,3 +74,161 @@ function operate(e){
         displayOperation(); */
     }
 }
+
+/*function checkOperatorTwo(operators, numbers){
+    for (j = 0; j < operators.length, j < numbers.length; j++){
+        if (operators[j] === "/" && x !== 0){           
+             x_1 = parseFloat(numbers[j]);
+             x = parseFloat(numbers[j + 1]);
+             operationResult = x_1/x;
+            
+            if(j === 0){
+                numbers.shift(numbers[j]);
+                numbers.shift(numbers[j + 1]);
+                operators.shift(operators[j]);
+                operationResult = operationResult.toString();
+                numbers.unshift(operationResult);
+                operationResult = 0;
+                x_1 = 0;
+                x = 0;
+            } else if (j === operators.length - 1){
+                numbers.pop(numbers[j]);
+                numbers.pop(numbers[j + 1]);
+                operators.pop(operators[j]);
+                operationResult = operationResult.toString();
+                numbers.push(operationResult);
+                operationResult = 0;
+                x_1 = 0;
+                x = 0;
+            } else {
+                operationResult = operationResult.toString();
+                numbers.splice(j,2,operationResult); //starting at index j, remove 2 elements and add operationResult to the new available space in array without creating a new array
+                operators.splice(j, 1);
+                operationResult = 0;
+                x_1 = 0;
+                x = 0;
+            }
+        } else if (operators[j] === "/" && x === 0){
+            operationResult = "Result is undefined.";
+        } else if (operators[j] !== "/" && j < operators.length){
+            continue;
+        } else {
+            for (k = 0; k < operators.length, k < numbers.length; k++){
+                if (operators[k] === "*"){
+                    x_1 = parseFloat(numbers[k]);
+                    x = parseFloat(numbers[k + 1]);
+                    operationResult = x_1 * x;
+
+                    if(k === 0){
+                        numbers.shift(numbers[k]);
+                        numbers.shift(numbers[k + 1]);
+                        operators.shift(operators[k]);
+                        operationResult = operationResult.toString();
+                        numbers.unshift(operationResult);
+                        operationResult = 0;
+                        x_1 = 0;
+                        x = 0;
+                    } else if (k === operators.length - 1){
+                        numbers.pop(numbers[k]);
+                        numbers.pop(numbers[k + 1]);
+                        operators.pop(operators[k]);
+                        operationResult = operationResult.toString();
+                        numbers.push(operationResult);
+                        operationResult = 0;
+                        x_1 = 0;
+                        x = 0;
+                    } else {
+                        operationResult = operationResult.toString();
+                        numbers.splice(k,2,operationResult); 
+                        operators.splice(k, 1);
+                        return operationResult;
+                        operationResult = 0;
+                        x_1 = 0;
+                        x = 0;
+                    }
+                } else if (operators[k] !== "*" && k < operators.length){
+                    continue;
+                } else {
+                    for (l = 0; l < operators.length, l < numbers.length; l++){
+                        if (operators[l] === "+"){        
+                             x_1 = parseFloat(numbers[l]);
+                             x = parseFloat(numbers[l + 1]);
+                             operationResult = x_1 + x;
+
+                            if(l === 0){
+                                numbers.shift(numbers[l]);
+                                numbers.shift(numbers[l + 1]);
+                                operators.shift(operators[l]);
+                                operationResult = operationResult.toString();
+                                numbers.unshift(operationResult);
+                                operationResult = 0;
+                                x_1 = 0;
+                                x = 0;
+                            } else if (l === operators.length - 1){
+                                numbers.pop(numbers[l]);
+                                numbers.pop(numbers[l + 1]);
+                                operators.pop(operators[l]);
+                                operationResult = operationResult.toString();
+                                numbers.push(operationResult);
+                                operationResult = 0;
+                                x_1 = 0;
+                                x = 0;
+                            } else {
+                                operationResult = operationResult.toString();
+                                numbers.splice(l,2,operationResult);
+                                operators.splice(l, 1);
+                                operationResult = 0;
+                                x_1 = 0;
+                                x = 0;
+                            }
+                        } else if (operators[l] !== "+" && l < operators.length){
+                            continue;
+                        } else {
+                            for (m = 0; m < operators.length, m < numbers.length; m++){
+                                if (operators[m] === "-"){    
+                                     x_1 = parseFloat(numbers[m]);
+                                    x = parseFloat(numbers[m + 1]);
+                                    operationResult = x_1 - x;
+
+                                    if(m === 0){
+                                        numbers.shift(numbers[m]);
+                                        numbers.shift(numbers[m + 1]);
+                                        operators.shift(operators[m]);
+                                        operationResult = operationResult.toString();
+                                        numbers.unshift(operationResult);
+                                        operationResult = 0;
+                                        x_1 = 0;
+                                        x = 0;
+                                    } else if (j === operators.length - 1){
+                                        numbers.pop(numbers[m]);
+                                        numbers.pop(numbers[m + 1]);
+                                        operators.pop(operators[m]);
+                                        operationResult = operationResult.toString();
+                                        numbers.push(operationResult);
+                                        operationResult = 0;
+                                        x_1 = 0;
+                                        x = 0;
+                                    } else {
+                                        operationResult = operationResult.toString();
+                                        numbers.splice(m,2,operationResult); 
+                                        operators.splice(m, 1);
+                                        operationResult = 0;
+                                        x_1 = 0;
+                                        x = 0;
+                                    }
+                                } else if (operators[m] !== "-" && m < operators.length){
+                                    continue;
+                                } else {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }     
+    let lastElementOfNumbersArray = numbers[numbers.length - 1];
+
+    return lastElementOfNumbersArray; 
+}  */
