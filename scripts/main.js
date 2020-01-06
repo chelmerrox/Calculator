@@ -453,3 +453,15 @@ function useThree(e){
         displayOperation();
     }
 }
+
+function useFour(e){
+    if (e.target === four || e.keyCode === 52 || e.keyCode === 100){
+        value = "4";
+
+        numbers.push(value);
+    
+        result += value;
+
+        displayOperation();
+    }
+}
