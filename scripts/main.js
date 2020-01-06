@@ -294,3 +294,12 @@ function displayOperation(){
     display.style.position = "relative";
     display.style.right = "1000px";
 }
+
+function useAdditionOperator(e){
+    if (e.currentTarget === add  || (e.keyCode ===  187 && e.shiftKey === true)){
+         operator = "+";
+         operators.push(operator);
+         result += operator;
+         displayOperation();
+    }
+}
