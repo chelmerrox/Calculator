@@ -288,3 +288,9 @@ function checkOperator(numbers, operators){
           } 
       } 
  }
+
+function displayOperation(){
+    display.textContent = result;
+    display.style.position = "relative";
+    display.style.right = "1000px";
+}
