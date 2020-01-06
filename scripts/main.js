@@ -649,3 +649,34 @@ function changeCalculatorColor(e){
         decimalPoint.style.backgroundColor = "white";
     }
 }
+
+//Event listeners for the numeric buttons
+zero.addEventListener('click', useZero);
+zero.addEventListener('keypress', useZero);
+
+one.addEventListener('click', useOne);
+one.addEventListener('keypress', useOne);
+
+two.addEventListener('click', useTwo);
+two.addEventListener('keydown', useTwo);
+
+three.addEventListener('click', useThree);
+three.addEventListener('keydown', useThree);
+
+four.addEventListener('click', useFour);
+four.addEventListener('keydown', useFour);
+
+five.addEventListener('click', useFive);
+five.addEventListener('keydown', useFive); 
+
+six.addEventListener('click', useSix);
+six.addEventListener('keydown', useSix);
+
+seven.addEventListener('click', useSeven);
+seven.addEventListener('keydown', useSeven);
+
+eight.addEventListener('click', useEight);
+eight.addEventListener('keydown', useEight);
+
+nine.addEventListener('click', useNine);
+nine.addEventListener('keydown', useNine); 
