@@ -501,3 +501,15 @@ function useSeven(e){
         displayOperation();
     }
 }
+
+function useEight(e){
+    if (e.target === eight || e.keyCode === 56 || e.keyCode === 104){
+        value = "8";
+
+        numbers.push(value);
+
+        result += value;
+
+        displayOperation();
+    }
+}
