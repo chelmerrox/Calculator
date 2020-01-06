@@ -359,3 +359,12 @@ function useClearButton(e){    //clears all entries and all functions to start f
         displayOperation();
     }
 }
+
+function useClearEntryButton(e){  //clears the most recent entry and sets its value to zero
+    if (numbers.length === 2 || operators.length === 1){
+        numbers[1] === "0";
+        x = parseFloat(numbers[1]);
+        result += evaluation + numbers[1];
+        displayOperation();
+    } 
+} 
