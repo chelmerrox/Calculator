@@ -10,7 +10,7 @@ I am using HTML5 and CSS3 for this project.
 
 ## Preview of my web page
 
-![Preview](images/webpage_top.PNG)
+![Preview](images/webpage_top_1.PNG)
 
 ![Preview 2](images/webpage_bottom.PNG)
 
