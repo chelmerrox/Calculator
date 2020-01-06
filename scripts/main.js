@@ -336,3 +336,10 @@ function matchNumbersToStringExpression(){
 
     return ((numbers[0].match(y))? true : false);
 }
+
+function useNegateOperator(e){
+    if (e.currentTarget === negate){
+        
+        operator = "-"
+    }
+} 
