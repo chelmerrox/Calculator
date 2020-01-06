@@ -343,3 +343,19 @@ function useNegateOperator(e){
         operator = "-"
     }
 } 
+
+function useClearButton(e){    //clears all entries and all functions to start fresh
+    if (numbers !== [] && operators !== []){
+        numbers = [];
+        operators = [];
+        evaluation = 0;
+        x_1 = 0;
+        x = 0;
+        operationResult = 0;
+        value = "0";
+        result = "";
+        result = value;
+
+        displayOperation();
+    }
+}
