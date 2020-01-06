@@ -680,3 +680,32 @@ eight.addEventListener('keydown', useEight);
 
 nine.addEventListener('click', useNine);
 nine.addEventListener('keydown', useNine); 
+
+//event listeners for operators
+equal.addEventListener('click', operate);
+equal.addEventListener('keypress', operate); 
+
+operator = add.addEventListener('click', useAdditionOperator);
+operator = add.addEventListener('keypress', useAdditionOperator);
+
+operator = subtract.addEventListener('click', useSubtractionOperator);
+operator = subtract.addEventListener('keypress', useSubtractionOperator);
+
+operator = multiply.addEventListener('click', useMultiplicationOperator);
+operator = multiply.addEventListener('keypress', useMultiplicationOperator);
+
+operator = divide.addEventListener('click', useDivisionOperator);
+operator = divide.addEventListener('keypress', useDivisionOperator);
+
+operator = decimalPoint.addEventListener('click', useDecimalPointOperator);
+operator = decimalPoint.addEventListener('keypress', useDecimalPointOperator); 
+
+operator = negate.addEventListener('click', useNegateOperator);
+operator = negate.addEventListener('keypress', useNegateOperator); 
+
+operator = clear.addEventListener('click', useClearButton);
+
+operator = clearEntry.addEventListener('click', useClearEntryButton);
+
+operator = backspace.addEventListener('click', useBackSpaceOperator);
+operator = backspace.addEventListener('keypress', useBackSpaceOperator);  
