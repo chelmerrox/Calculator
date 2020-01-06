@@ -232,3 +232,59 @@ function operate(e){
 
     return lastElementOfNumbersArray; 
 }  */
+
+function checkOperator(numbers, operators){
+    for (j = 0; j < numbers.length, j < operators.length; j++){ 
+         x_1 = parseFloat(numbers[0]);
+         x = parseFloat(numbers[1]);
+         
+         if (operators[0] === "/" && x !== 0){
+             operationResult = x_1/x;
+             x_1 = operationResult;
+             x = 0;
+             operationResult = operationResult.toString();
+             numbers.shift(numbers[0]);
+             numbers.shift(numbers[1]);
+             numbers.unshift(operationResult);
+             operationResult = 0;
+             operators.shift(operators[0]);
+             return numbers[0];
+         } else if (operators[0] === "/" && x === 0) {
+             operationResult = "Result is undefined.";
+             return operationResult;
+         } else if (operators[0] === "x"){
+             operationResult = x_1 * x;
+             x_1 = operationResult;
+             x = 0;
+             operationResult = operationResult.toString();
+             numbers.shift(numbers[0]);
+             numbers.shift(numbers[1]);
+             numbers.unshift(operationResult);
+             operationResult = 0;
+             operators.shift(operators[0]);
+             return numbers[0];
+         } else if (operators[0] === "+"){
+             operationResult = x_1 + x;
+             x_1 = operationResult;
+             x = 0; 
+             operationResult = operationResult.toString();
+             numbers.shift(numbers[0]);
+             numbers.shift(numbers[1]);
+             numbers.unshift(operationResult);
+             operationResult = 0;
+             operators.shift(operators[0]);
+             return numbers[0];
+         } else if (operators[0] === "-"){
+             operationResult = x_1 - x;
+             x_1 = operationResult;
+             x = 0;
+             operationResult = operationResult.toString();
+             numbers.shift(numbers[0]);
+             numbers.shift(numbers[1]);
+             numbers.unshift(operationResult);
+             operationResult = 0;
+             operators.shift(operators[0]);
+             return numbers[0];
+          } 
+      } 
+ }
