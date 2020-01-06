@@ -22,6 +22,8 @@ I am using HTML5 and CSS3 for this project.
 
 ## Use the Calculator
 
+https://chelmerrox.github.io/Calculator/
+
 ## Author
 
 Losalini Rokocakau **GitHub username:** *chelmerrox*
