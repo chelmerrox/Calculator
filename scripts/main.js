@@ -312,3 +312,12 @@ function useSubtractionOperator(e){
         displayOperation();
     } 
 } 
+
+function useMultiplicationOperator(e){
+    if (e.currentTarget === multiply || (e.keyCode === 56 && e.shiftKey === true)){
+        operator = "x";
+        operators.push(operator);
+        result += operator;
+        displayOperation();
+    }
+}
