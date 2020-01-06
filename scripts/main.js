@@ -47,3 +47,30 @@ const display = document.querySelector('p');
 const darkLightMode = document.getElementById('dark-light-mode');
 const thirdContainer = document.getElementById('third-container');
 const displayScreen = document.getElementById('display-screen');
+
+//Function declarations
+function operate(e){
+    if (e.currentTarget === equal || (e.keyCode === 187 && e.shiftKey === false )){
+        
+        for (i = 0; i < numbers.length; i++){
+            
+            result += numbers[i];
+            
+            if(i < operators.length){
+                result += operators[i];
+            } 
+        
+            if (i >= 1){
+                evaluation = checkOperator(numbers, operators);
+                result += " = " + evaluation;
+                displayOperation();
+            } else {
+                evaluation = checkOperator(numbers, operators);
+                result = evaluation;
+                displayOperation();
+            }
+        }
+      /*   result += "=" + evaluation;
+        displayOperation(); */
+    }
+}
