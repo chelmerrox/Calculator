@@ -489,3 +489,15 @@ function useSix(e){
         displayOperation();
     }
 }
+
+function useSeven(e){
+    if (e.target === seven || e.keyCode === 55 || e.keyCode === 103){
+        value = "7";
+
+        numbers.push(value);
+
+        result += value;
+
+        displayOperation();
+    }
+}
