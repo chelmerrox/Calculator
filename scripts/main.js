@@ -303,3 +303,12 @@ function useAdditionOperator(e){
          displayOperation();
     }
 }
+
+function useSubtractionOperator(e){
+    if (e.currentTarget === subtract || (e.keyCode === 189 && e.shiftKey === false)){
+        operator = "-";
+        operators.push(operator);
+        result += operator;
+        displayOperation();
+    } 
+} 
