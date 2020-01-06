@@ -368,3 +368,8 @@ function useClearEntryButton(e){  //clears the most recent entry and sets its va
         displayOperation();
     } 
 } 
+
+function useBackSpaceOperator(e){
+    if (e.currentTarget || e.keyCode === 8){
+    }
+}
