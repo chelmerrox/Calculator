@@ -373,3 +373,19 @@ function useBackSpaceOperator(e){
     if (e.currentTarget || e.keyCode === 8){
     }
 }
+
+/* function returnLastIndexOfFirstString (){
+    let q = numbers.lastIndexOf(numbers[0]);
+
+    if (numbers[0][q] === "."){
+        return true;
+    }
+} */
+
+/* function returnLastIndexOfSecondString(){
+    let r = numbers.lastIndexOf(numbers[1]);
+
+    if (numbers[1][r] === "."){
+        return true;
+    }
+} */
