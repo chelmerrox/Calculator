@@ -389,3 +389,14 @@ function useBackSpaceOperator(e){
         return true;
     }
 } */
+
+//functions for numbers
+function useZero(e){
+    if (e.target === zero || e.keyCode === 48 || e.keyCode === 96){
+        value = "0";
+
+        numbers.push(value); 
+        result += value;
+        displayOperation();
+    }
+}
