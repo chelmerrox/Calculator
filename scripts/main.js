@@ -321,3 +321,12 @@ function useMultiplicationOperator(e){
         displayOperation();
     }
 }
+
+function useDivisionOperator(e){
+    if (e.currentTarget === divide || (e.keyCode === 191 && e.shiftKey === false)){
+        operator = "/";
+        operators.push(operator);
+        result += operator;
+        displayOperation();
+    }
+}
