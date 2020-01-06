@@ -513,3 +513,15 @@ function useEight(e){
         displayOperation();
     }
 }
+
+function useNine(e){
+    if (e.target === nine || e.keyCode === 57 || e.keyCode === 105){
+        value = "9";
+
+        numbers.push(value);
+
+        result += value;
+
+        displayOperation();
+    }
+}  
