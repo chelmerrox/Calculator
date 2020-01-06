@@ -429,3 +429,15 @@ function useOne(e){
         displayOperation();
     }
 }
+
+function useTwo(e){
+    if (e.target === two || e.keyCode === 50 || e.keyCode === 98){
+        value = "2";
+
+        numbers.push(value);
+
+        result += value;
+
+        displayOperation();
+    }
+}
