@@ -331,6 +331,20 @@ function useDivisionOperator(e){
     }
 }
 
+function useDecimalPointOperator(e){
+    if (e.currentTarget === decimalPoint || e.keyCode === 190){
+        if(operators === [] && matchNumbersToStringExpression() === true){
+            numbers[0] += ".";
+            result = numbers[0];
+            displayOperation();
+        } else if (operators !== [] && numbers.length === 2 ){
+            numbers[1] += "."
+            result = numbers[1];
+            displayOperation();
+        }
+    }
+}
+
 function matchNumbersToStringExpression(){
     let y = [/^[0-9]+$/g];
 
