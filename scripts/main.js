@@ -441,3 +441,15 @@ function useTwo(e){
         displayOperation();
     }
 }
+
+function useThree(e){
+    if (e.target === three || e.keyCode === 51 || e.keyCode === 99){
+        value = "3";
+
+        numbers.push(value);
+
+        result += value;
+
+        displayOperation();
+    }
+}
