@@ -465,3 +465,15 @@ function useFour(e){
         displayOperation();
     }
 }
+
+function useFive(e){
+    if (e.target === five || e.keyCode === 53 || e.keyCode === 101){
+        value = "5";
+
+        numbers.push(value);
+
+        result += value;
+
+        displayOperation();
+    }
+}
