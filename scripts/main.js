@@ -525,3 +525,127 @@ function useNine(e){
         displayOperation();
     }
 }  
+
+function changeCalculatorColor(e){
+    if (darkLightMode.style.backgroundColor === 'white'){
+        darkLightMode.style.backgroundColor = "black";
+        darkLightMode.style.color = "grey";
+        darkLightMode.style.textContent = "Light Mode";
+
+        thirdContainer.style.backgroundColor = "black";
+        thirdContainer.style.borderWeight = "2px";
+        thirdContainer.style.borderStyle = "solid";
+
+        displayScreen.style.backgroundColor = "black";
+        displayScreen.style.borderColor = "rgb(36,36,36)";
+        displayScreen.style.borderWeight = "2px";
+        displayScreen.style.borderStyle = "solid";
+        displayScreen.style.boxShadowColor = "rgb(36,36,36)";
+        displayScreen.style.boxShadowHOffset = "1px";
+        displayScreen.style.boxShadowVOffset = "1px";
+        displayScreen.style.boxShadowBlur = "10px";
+        display.style.color = "white";
+
+        zero.style.backgroundColor = "black";
+        one.style.backgroundColor = "black";
+        two.style.backgroundColor = "black";
+        three.style.backgroundColor = "black";
+        four.style.backgroundColor = "black";
+        five.style.backgroundColor = "black";
+        six.style.backgroundColor = "black";
+        seven.style.backgroundColor = "black";
+        eight.style.backgroundColor = "black";
+        nine.style.backgroundColor = "black";
+
+        zero.style.color = "white";
+        one.style.color = "white";
+        two.style.color = "white";
+        three.style.color = "white";
+        four.style.color = "white";
+        five.style.color = "white";
+        six.style.color = "white";
+        seven.style.color = "white";
+        eight.style.color = "white";
+        nine.style.color = "white";
+
+        clearEntry.style.backgroundColor = "rgb(14,13,13)";
+        clear.style.backgroundColor = "rgb(14,13,13)";
+        add.style.backgroundColor = "rgb(14,13,13)";
+        subtract.style.backgroundColor = "rgb(14,13,13)";
+        multiply.style.backgroundColor = "rgb(14,13,13)";
+        divide.style.backgroundImage = "url('../images/divide_black.png')";
+        negate.style.backgroundColor = "rgb(14,13,13)";
+        equal.style.backgroundColor = "rgb(14,13,13)";
+
+        clearEntry.style.color = "white";
+        clear.style.color = "white";
+        add.style.color = "white";
+        subtract.style.color = "white";
+        multiply.style.color = "white";
+        divide.style.color = "white";
+        negate.style.color = "white";
+        equal.style.color = "white";
+        
+        backspace.style.backgroundImage = "url('../images/backspace_black.png')";
+        decimalPoint.style.backgroundColor = "rgb(14,13,13)";
+    } else {
+        darkLightMode.style.backgroundColor = "white";
+        darkLightMode.style.color = "lightgrey";
+        darkLightMode.style.textContent = "Dark Mode";
+
+        thirdContainer.style.backgroundColor = "white";
+
+        displayScreen.style.backgroundColor = "white";
+        displayScreen.style.borderColor = "lightgrey";
+        displayScreen.style.borderWeight = "2px";
+        displayScreen.style.borderStyle = "solid";
+        displayScreen.style.boxShadowColor = "rgb(36,36,36)";
+        displayScreen.style.boxShadowHOffset = "1px";
+        displayScreen.style.boxShadowVOffset = "1px";
+        displayScreen.style.boxShadowBlur = "10px";
+        display.style.color = "grey";
+
+        zero.style.backgroundColor = "rgb(238,235,235)";
+        one.style.backgroundColor = "rgb(238,235,235)";
+        two.style.backgroundColor = "rgb(238,235,235)";
+        three.style.backgroundColor = "rgb(238,235,235)";
+        four.style.backgroundColor = "rgb(238,235,235)";
+        five.style.backgroundColor = "rgb(238,235,235)";
+        six.style.backgroundColor = "rgb(238,235,235)";
+        seven.style.backgroundColor = "rgb(238,235,235)";
+        eight.style.backgroundColor = "rgb(238,235,235)";
+        nine.style.backgroundColor = "rgb(238,235,235)";
+
+        zero.style.color = "grey";
+        one.style.color = "grey";
+        two.style.color = "grey";
+        three.style.color = "grey";
+        four.style.color = "grey";
+        five.style.color = "grey";
+        six.style.color = "grey";
+        seven.style.color = "grey";
+        eight.style.color = "grey";
+        nine.style.color = "grey";
+
+        clearEntry.style.backgroundColor = "white";
+        clear.style.backgroundColor = "white";
+        add.style.backgroundColor = "white";
+        subtract.style.backgroundColor = "white";
+        multiply.style.backgroundColor = "white";
+        divide.style.backgroundImage = "url(images/divide_white.png)";
+        negate.style.backgroundColor = "white";
+        equal.style.backgroundColor = "white";
+
+        clearEntry.style.color = "grey";
+        clear.style.color = "grey";
+        add.style.color = "grey";
+        subtract.style.color = "grey";
+        multiply.style.color = "grey";
+        divide.style.color = "grey";
+        negate.style.color = "grey";
+        equal.style.color = "grey";
+
+        backspace.style.backgroundImage = "url(images/backspace_white.png)";
+        decimalPoint.style.backgroundColor = "white";
+    }
+}
