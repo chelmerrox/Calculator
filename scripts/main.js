@@ -477,3 +477,15 @@ function useFive(e){
         displayOperation();
     }
 }
+
+function useSix(e){
+    if (e.target === six || e.keyCode === 54 || e.keyCode === 102){
+        value = "6";
+
+        numbers.push(value);
+
+        result += value;
+
+        displayOperation();
+    }
+}
